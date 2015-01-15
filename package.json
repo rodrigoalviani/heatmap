@@ -1,0 +1,11 @@
+{
+  "name": "heatmap",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Rodrigo Alviani <rodrigoalviani@gmail.com> (https://github.com/rodrigoalviani)",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "latest"
+  }
+}
