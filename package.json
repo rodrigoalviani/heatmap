@@ -6,6 +6,7 @@
   "main": "server.js",
   "license": "MIT",
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "body-parser": "latest"
   }
 }
