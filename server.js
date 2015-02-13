@@ -17,7 +17,7 @@ app.post('/event', function (req, res) {
   var click = new Click(req.body);
   click.save(function (err) {
     if (err) console.log(err);
-    res.end();
+    res.status(201).end();
   });
 });
 
