@@ -21,6 +21,14 @@ app.post('/event', function (req, res) {
   });
 });
 
+app.get('/events', function (req, res) {
+	Click
+    .distinct('page', function (err, docs) {
+      if (err) console.log(err);
+      res.status(200).json({pages: docs}).end();
+    });
+});
+
 app.listen(3000, function(){
   console.log('server listen port 3000');
 });
