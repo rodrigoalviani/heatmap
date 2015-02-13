@@ -29,6 +29,16 @@ app.get('/events', function (req, res) {
     });
 });
 
+app.get('/event/:page', function (req, res) {
+  Click
+    .find({page: req.params.page}, '-_id -__v -page -date')
+    .sort('date')
+    .exec(function (err, docs) {
+      if (err) console.log(err);
+      res.status(200).json({clicks: docs}).end();
+    });
+});
+
 app.listen(3000, function(){
   console.log('server listen port 3000');
 });
